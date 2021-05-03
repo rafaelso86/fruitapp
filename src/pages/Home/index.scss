@@ -1,0 +1,59 @@
+.list-fruit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .card-fruit{
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        max-width: 260px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        img{
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            margin: 10px auto 0;
+            display: block;
+        }
+
+        .content{
+            padding: 20px
+        }
+
+        a{
+            background-color: blue;
+            border: 1px solid blue;
+            color: #fff;
+            font-size: 14px;
+            font-family: Open-Sans, sans-serif;
+            padding: 12px 16px;
+            border-radius: 5px;
+            max-width: 360px;
+            margin: 10px auto 0;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            text-transform: uppercase;
+        }
+        a:hover{
+            background-color: #fff;
+            color: blue;
+        }
+    }
+}
+
+@media all and(max-width: 880px){
+    
+    .list-fruit .card-fruit {
+        max-width: 360px;
+        margin: 0 auto 30px;
+    }
+}
