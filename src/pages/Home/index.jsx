@@ -8,6 +8,8 @@ import './index.scss';
 
 function Home() {
 
+    const url = window.location.href;
+
     const {
         setNameFruit,
         setPhotoFruit,
@@ -23,7 +25,7 @@ function Home() {
 
     useEffect(() => {
         const listFruit = async () => {
-            await axios.get(`http://localhost:3000/api/frutas.json`)
+            await axios.get(`${url}api/frutas.json`)
                 .then(response => {
                     console.log(response.data);
                     setFruits(response.data);
