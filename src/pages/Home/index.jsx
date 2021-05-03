@@ -33,7 +33,7 @@ function Home() {
         }
 
         listFruit();
-    }, [])
+    }, [url])
 
     function clickButton(fruit) {
         console.log(fruit);
